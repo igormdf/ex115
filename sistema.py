@@ -13,7 +13,11 @@ while True:
         #listar o conteúdo de um aqrquivo
         lerArquivo(arq)
     elif resposta == 2:
-        cabeçalho('Opção 2')
+        #cadastrar uma nova pessoa
+        cabeçalho('NOVO CADASTRADO')
+        nome = input('Nome: ')
+        idade = int(input('idade: '))
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
         print('Opção 3')
         cabeçalho('Saindo so sistema... até logo!')
